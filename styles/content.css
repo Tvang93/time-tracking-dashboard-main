@@ -9,6 +9,8 @@
     gap: 30px;
 }
 
+/* Profile Card CSS */
+
 .profile-card {
     grid-row: span 2;
     background-color: var(--neutral-dark-blue);
@@ -36,6 +38,16 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+.setActiveToggle{
+    color:white;
+}
+/* Profile Card Edd */
+
+
+
+
+/* Other Cards */
 
 .card {
     border-radius: 15px;

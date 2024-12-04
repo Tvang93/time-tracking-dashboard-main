@@ -35,12 +35,16 @@ h1 {
     font-family: 'Rubik', Arial, Helvetica, sans-serif;
     font-size: 56px;
     font-weight: 300;
+    color: white;
+    margin: 0;
 }
 
 h2 {
     font-family: 'Rubik', Arial, Helvetica, sans-serif;
     font-size: 40px;
     font-weight: 300;
+    color: white;
+    margin: 0;
 }
 
 h4 {
@@ -60,4 +64,9 @@ h5 {
 p {
     margin: 0;
     color: var(--neutral-desaturated-blue)
+}
+
+p:hover {
+    color:white;
+    cursor: pointer;
 }
