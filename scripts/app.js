@@ -1,53 +1,45 @@
-// import { getData } from "./fetch.js"; 
-
 const dailyToggle = document.getElementById('dailyToggle');
 const weeklyToggle = document.getElementById('weeklyToggle');
 const monthlyToggle = document.getElementById('monthlyToggle');
-const workSectionBody = document.getElementById('workSectionBody');
-const playSectionBody = document.getElementById('playSectionBody');
-const studySectionBody = document.getElementById('studySectionBody');
-const exerciseSectionBody = document.getElementById('exerciseSectionBody');
-const socialSectionBody = document.getElementById('socialSectionBody');
-const selfCareSectionBody = document.getElementById('selfCareSectionBody');
+const workCurrent = document.getElementById('workCurrent');
+const playCurrent = document.getElementById('playCurrent');
+const studyCurrent = document.getElementById('studyCurrent');
+const exerciseCurrent = document.getElementById('exerciseCurrent');
+const socialCurrent = document.getElementById('socialCurrent');
+const selfCareCurrent = document.getElementById('selfCareCurrent');
+const workPrevious = document.getElementById('workPrevious');
+const playPrevious = document.getElementById('playPrevious');
+const studyPrevious = document.getElementById('studyPrevious');
+const exercisePrevious = document.getElementById('exercisePrevious');
+const socialPrevious = document.getElementById('socialPrevious');
+const selfCarePrevious = document.getElementById('selfCarePrevious');
 
-let localData = [];
+let localData = '';
 
-function getData(){
-    return fetch('../data/data.json')
-    .then(response => response.json())
-    .then(data =>{
-        return data
-    })
+async function getData(){
+    const promise = await fetch("../data/data.json");
+    const data = await promise.json();
+    localData = data;
 }
 
 function setWeeklyActice(){
     dailyToggle.className = '';
     weeklyToggle.className = 'setActiveToggle';
     monthlyToggle.className = '';
-    let workWeekly = document.createElement('h1');
-    workWeekly.id = 'workWeekly'
-    workSectionBody.appendChild(workWeekly);
-    getData().then( data => {
-        console.log(data);
-        localData = data;
-        console.log(localData)
-        workWeekly.innerText = `${data[0].timeframes.weekly.current} hrs`;
-    })
 }
 
 setWeeklyActice();
-console.log(localData)
 
-function toggleInnerText(time){
-    workWeekly.innertext = `${localData[0].timeframes[time].current} hrs`;
+function toggleInnerText(){
+    console.log(workWeekly.innerText)
+    workWeekly.innertext = "work";
 }
 
 dailyToggle.addEventListener('click', function(){
     dailyToggle.className = 'setActiveToggle';
     weeklyToggle.className = '';
     monthlyToggle.className = '';
-    toggleInnerText('daily')
-    console.log(`${workWeekly.innerText}`)
+    toggleInnerText()
 })
 
 weeklyToggle.addEventListener('click', function(){
