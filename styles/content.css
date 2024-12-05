@@ -124,6 +124,10 @@
         align-items: center;
     }
 
+    .card-body-time-text h5{
+        text-align: end;
+    }
+
     .social-section{
         grid-column-start: unset;
     }
