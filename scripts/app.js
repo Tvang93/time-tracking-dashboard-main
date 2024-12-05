@@ -26,6 +26,7 @@ function setWeeklyActice(){
     dailyToggle.className = '';
     weeklyToggle.className = 'setActiveToggle';
     monthlyToggle.className = '';
+    workCurrent.className = '';
     toggleInnerText('weekly', 'Last Week');
 }
 
@@ -51,6 +52,7 @@ dailyToggle.addEventListener('click', function(){
     dailyToggle.className = 'setActiveToggle';
     weeklyToggle.className = '';
     monthlyToggle.className = '';
+    workCurrent.className = '';
     toggleInnerText('daily', 'Yesterday');
 })
 
@@ -62,5 +64,6 @@ monthlyToggle.addEventListener('click', function(){
     dailyToggle.className = '';
     weeklyToggle.className = '';
     monthlyToggle.className = 'setActiveToggle';
+    workCurrent.className = 'work-current-fit';
     toggleInnerText('monthly', 'Last Month');
 })

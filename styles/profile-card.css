@@ -39,3 +39,53 @@
 .setActiveToggle{
     color:white;
 }
+
+@media (max-width: 1200px){
+    .profile-card{
+        grid-row: span 3;
+    }
+}
+
+@media (max-width: 900px){
+    .profile-card {
+        grid-row: span 1;
+        height: 203px;
+    }
+    
+    .profile-upper-body {
+        height: 70px;
+        padding: 32px 32px 31px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .profile-pic {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .profile-pic-box {
+        margin-bottom: 0;
+        margin-right: 15px;
+    }
+    
+    .user-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .user-box h5{
+        margin-bottom: 0;
+    }
+    
+    .profile-lower-body {
+        height: 70px;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

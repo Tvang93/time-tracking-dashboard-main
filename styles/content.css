@@ -57,7 +57,7 @@
 
 .card-body {
     width: 100%;
-    margin-top: 18.44262%;
+    height: 56.97%;
     background-color: var(--neutral-dark-blue);
     border-radius: 15px;
     padding:11.76471% 12.295082%;
@@ -81,4 +81,39 @@
 
 .ellipsis-icons:hover{
     filter: contrast(2) brightness(2);
+}
+
+
+@media (max-width: 1200px){
+    .content-box {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px){
+    .content-box {
+        grid-template-columns: auto;
+        grid-template-rows: unset;
+    }
+
+    .card {
+        height: 160px;
+    }
+
+    .card-body {
+        height: 66px;
+        padding:28px 20px;
+    }
+
+    .card-body-header {
+        margin-bottom: 7px;
+    }
+
+    .card-body-time-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 }

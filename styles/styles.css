@@ -1,84 +1,131 @@
 @import url(./content.css);
 @import url(./profile-card.css);
 
-:root{
-    --primary-blue: hsl(246, 80%, 60%);
-    --primary-work: hsl(15, 100%, 70%);
-    --primary-play: hsl(195, 74%, 62%);
-    --primary-study: hsl(348, 100%, 68%);
-    --primary-exercise: hsl(145, 58%, 55%);
-    --primary-social: hsl(264, 64%, 52%);
-    --primary-self-care: hsl(43, 84%, 65%);
-    --neutral-very-dark-blue: hsl(226, 43%, 10%);
-    --neutral-dark-blue: hsl(235, 46%, 20%);
-    --neutral-desaturated-blue: hsl(235, 45%, 61%);
-    --neutral-pale-blue: hsl(236, 100%, 87%);
+:root {
+  --primary-blue: hsl(246, 80%, 60%);
+  --primary-work: hsl(15, 100%, 70%);
+  --primary-play: hsl(195, 74%, 62%);
+  --primary-study: hsl(348, 100%, 68%);
+  --primary-exercise: hsl(145, 58%, 55%);
+  --primary-social: hsl(264, 64%, 52%);
+  --primary-self-care: hsl(43, 84%, 65%);
+  --neutral-very-dark-blue: hsl(226, 43%, 10%);
+  --neutral-dark-blue: hsl(235, 46%, 20%);
+  --neutral-desaturated-blue: hsl(235, 45%, 61%);
+  --neutral-pale-blue: hsl(236, 100%, 87%);
 }
 
-@font-face{
-    font-family: 'Rubik';
-    src:url(../fonts/Rubik/Rubik-VariableFont_wght.ttf)
+@font-face {
+  font-family: "Rubik";
+  src: url(../fonts/Rubik/Rubik-VariableFont_wght.ttf);
 }
 
 body {
-    height:100vh;
-    width: 100%;
-    margin: 0;
-    display: grid;
-    grid-template-columns: 11.45833% 77.08334% 11.45833%;
-    grid-template-rows: 24.70703% 50.58594% 24.70703%;
-    background-color: var(--neutral-very-dark-blue);
-    font-size: 18px;
-    font-family: 'Rubik', Arial, Helvetica, sans-serif
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 11.45833% 77.08334% 11.45833%;
+  grid-template-rows: 24.70703% 50.58594% 24.70703%;
+  background-color: var(--neutral-very-dark-blue);
+  font-size: 18px;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
 }
 
 h1 {
-    font-family: 'Rubik', Arial, Helvetica, sans-serif;
-    font-size: 56px;
-    font-weight: 300;
-    color: white;
-    margin: 0 0 13px;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-size: 56px;
+  font-weight: 300;
+  color: white;
+  margin: 0 0 13px;
 }
 
 h2 {
-    font-family: 'Rubik', Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    font-weight: 300;
-    color: white;
-    margin: 0;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  color: white;
+  margin: 0;
 }
 
 h4 {
-    font-family: 'Rubik', Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    color: white;
-    margin: 0;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  margin: 0;
 }
 
 h5 {
-    font-family: 'Rubik', Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    color: var(--neutral-pale-blue);
-    margin: 0;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--neutral-pale-blue);
+  margin: 0;
 }
 
 p {
-    margin: 0;
-    color: var(--neutral-desaturated-blue)
+  margin: 0;
+  color: var(--neutral-desaturated-blue);
 }
 
 p:hover {
-    color:white;
-    cursor: pointer;
+  color: white;
+  cursor: pointer;
 }
 
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  grid-column: 2 / span 1;
+  grid-row-start: 3;
+  font-size: 11px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  color: white;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1300px) {
+    .work-current-fit {
+        font-size: 50px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+  body {
+    display: grid;
+    grid-template-columns: 7% auto 7%;
+    grid-template-rows: 5% auto 5%;
   }
 
-  .attribution a {
-    color: hsl(228, 45%, 44%);
+  .work-current-fit {
+    font-size: 56px;
+    }
+
+}
+
+@media (max-width: 900px) {
+  body {
+    display: grid;
+    grid-template-columns: 24px auto 24px;
+    grid-template-rows: 81px auto 81px;
   }
+
+  h1 {
+    font-size: 32px;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .work-current-fit {
+    font-size: 32px;
+    }
+}
