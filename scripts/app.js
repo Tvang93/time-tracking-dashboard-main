@@ -19,39 +19,49 @@ let localData = '';
 async function getData(){
     const promise = await fetch("../data/data.json");
     const data = await promise.json();
-    localData = data;
+    return data;
 }
 
 function setWeeklyActice(){
     dailyToggle.className = '';
     weeklyToggle.className = 'setActiveToggle';
     monthlyToggle.className = '';
+    toggleInnerText('weekly', 'Last Week');
+    console.log(localData)
 }
 
 setWeeklyActice();
 
-function toggleInnerText(){
-    console.log(workWeekly.innerText)
-    workWeekly.innertext = "work";
+async function toggleInnerText(timeValue, previousValue){
+    localData = await getData();
+    workCurrent.innerText = `${localData[0].timeframes[timeValue].current} hrs`;
+    workPrevious.innerText = `${previousValue} - ${localData[0].timeframes[timeValue].previous} hrs`;
+    playCurrent.innerText = `${localData[1].timeframes[timeValue].current} hrs`;
+    playPrevious.innerText = `${previousValue} - ${localData[1].timeframes[timeValue].previous} hrs`;
+    studyCurrent.innerText = `${localData[2].timeframes[timeValue].current} hrs`;
+    studyPrevious.innerText = `${previousValue} - ${localData[2].timeframes[timeValue].previous} hrs`;
+    exerciseCurrent.innerText = `${localData[3].timeframes[timeValue].current} hrs`;
+    exercisePrevious.innerText = `${previousValue} - ${localData[3].timeframes[timeValue].previous} hrs`;
+    socialCurrent.innerText = `${localData[4].timeframes[timeValue].current} hrs`;
+    socialPrevious.innerText = `${previousValue} - ${localData[4].timeframes[timeValue].previous} hrs`;
+    selfCareCurrent.innerText = `${localData[5].timeframes[timeValue].current} hrs`;
+    selfCarePrevious.innerText = `${previousValue} - ${localData[5].timeframes[timeValue].previous} hrs`;
 }
 
 dailyToggle.addEventListener('click', function(){
     dailyToggle.className = 'setActiveToggle';
     weeklyToggle.className = '';
     monthlyToggle.className = '';
-    toggleInnerText()
+    toggleInnerText('daily', 'Yesterday');
 })
 
 weeklyToggle.addEventListener('click', function(){
-    dailyToggle.className = '';
-    weeklyToggle.className = 'setActiveToggle';
-    monthlyToggle.className = '';
-    toggleText("weekly");
+    setWeeklyActice();
 })
 
 monthlyToggle.addEventListener('click', function(){
     dailyToggle.className = '';
     weeklyToggle.className = '';
     monthlyToggle.className = 'setActiveToggle';
-    toggleText("monthly");
+    toggleInnerText('monthly', 'Last Month');
 })
