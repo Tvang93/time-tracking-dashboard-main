@@ -27,7 +27,6 @@ function setWeeklyActice(){
     weeklyToggle.className = 'setActiveToggle';
     monthlyToggle.className = '';
     toggleInnerText('weekly', 'Last Week');
-    console.log(localData)
 }
 
 setWeeklyActice();
