@@ -1,4 +1,5 @@
 @import url(./content.css);
+@import url(./profile-card.css);
 
 :root{
     --primary-blue: hsl(246, 80%, 60%);
@@ -52,13 +53,15 @@ h4 {
     font-size: 18px;
     font-weight: 500;
     color: white;
+    margin: 0;
 }
 
 h5 {
     font-family: 'Rubik', Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 400;
-    color: var(--neutral-pale-blue)
+    color: var(--neutral-pale-blue);
+    margin: 0;
 }
 
 p {

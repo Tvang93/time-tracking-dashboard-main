@@ -1,0 +1,33 @@
+@import url(./styles.css);
+
+.profile-card {
+    grid-row: span 2;
+    background-color: var(--neutral-dark-blue);
+    border-radius: 15px;
+}
+
+.profile-upper-body {
+    height: 68.33977%;
+    background-color: var(--primary-blue);
+    padding: 0 34px;
+    border-radius: 15px;
+}
+
+.profile-pic {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    border: 3.5px solid white;
+}
+
+.profile-lower-body {
+    height: 18.996138%;
+    padding: 17.68293% 13.33% 20.12195%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.setActiveToggle{
+    color:white;
+}

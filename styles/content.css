@@ -9,42 +9,6 @@
     gap: 30px;
 }
 
-/* Profile Card CSS */
-
-.profile-card {
-    grid-row: span 2;
-    background-color: var(--neutral-dark-blue);
-    border-radius: 15px;
-}
-
-.profile-upper-body {
-    height: 68.33977%;
-    background-color: var(--primary-blue);
-    padding: 0 34px;
-    border-radius: 15px;
-}
-
-.profile-pic {
-    width: 84px;
-    height: 84px;
-    border-radius: 50%;
-    border: 3.5px solid white;
-}
-
-.profile-lower-body {
-    height: 18.996138%;
-    padding: 17.68293% 13.33% 20.12195%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.setActiveToggle{
-    color:white;
-}
-/* Profile Card End */
-
-
 /* Other Cards */
 
 .card {
@@ -55,6 +19,19 @@
     align-items: end;
 }
 
+.card-section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ellipsis-icons{
+    height: 100%;
+}
+
+.ellipsis-icons:hover{
+    filter: contrast(2) brightness(2);
+}
 
 .work-section {
     background-color: var(--primary-work);
@@ -97,5 +74,9 @@
     height: 81.55738%;
     background-color: var(--neutral-dark-blue);
     border-radius: 15px;
-    
+}
+
+.card-body:hover {
+    background-color: #33397A;
+    cursor: pointer;
 }
