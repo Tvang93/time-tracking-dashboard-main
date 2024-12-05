@@ -30,7 +30,7 @@
 
 .profile-lower-body {
     height: 19.69112%;
-    padding: 11.377% 0 0 13.33%;
+    padding: 28px 0 0 13.33%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -41,9 +41,9 @@
 }
 
 @media (max-width: 1200px){
-    .profile-card{
+    /* .profile-card{
         grid-row: span 3;
-    }
+    } */
 }
 
 @media (max-width: 900px){

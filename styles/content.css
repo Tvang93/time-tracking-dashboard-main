@@ -89,6 +89,14 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
+
+    .social-section{
+        grid-column-start: 2;
+    }
+
+    .self-care-section{
+        grid-column-start: 3;
+    }
 }
 
 @media (max-width: 900px){
@@ -114,6 +122,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .social-section{
+        grid-column-start: unset;
+    }
+
+    .self-care-section{
+        grid-column-start: unset;
     }
 
 }
