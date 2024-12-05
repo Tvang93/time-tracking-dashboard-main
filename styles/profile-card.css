@@ -7,9 +7,9 @@
 }
 
 .profile-upper-body {
-    height: 68.33977%;
+    height: 61.8%;
     background-color: var(--primary-blue);
-    padding: 0 34px;
+    padding: 13.335% 13.33% 0;
     border-radius: 15px;
 }
 
@@ -20,9 +20,17 @@
     border: 3.5px solid white;
 }
 
+.profile-pic-box {
+    margin-bottom: 42px;
+}
+
+.user-box h5{
+    margin-bottom: 12px;
+}
+
 .profile-lower-body {
-    height: 18.996138%;
-    padding: 17.68293% 13.33% 20.12195%;
+    height: 19.69112%;
+    padding: 11.377% 0 0 13.33%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

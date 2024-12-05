@@ -12,25 +12,11 @@
 /* Time Cards */
 
 .card {
-    border-radius: 15px;
+    border-radius: 15px 15px 20px 20px;
     background-repeat: no-repeat;
     background-position-x: 90%;
     display: flex;
     align-items: end;
-}
-
-.card-section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.ellipsis-icons{
-    height: 100%;
-}
-
-.ellipsis-icons:hover{
-    filter: contrast(2) brightness(2);
 }
 
 .work-section {
@@ -71,12 +57,28 @@
 
 .card-body {
     width: 100%;
-    height: 81.55738%;
+    margin-top: 18.44262%;
     background-color: var(--neutral-dark-blue);
     border-radius: 15px;
+    padding:11.76471% 12.295082%;
 }
 
 .card-body:hover {
     background-color: #33397A;
     cursor: pointer;
+}
+
+.card-body-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.ellipsis-icons{
+    height: 100%;
+}
+
+.ellipsis-icons:hover{
+    filter: contrast(2) brightness(2);
 }

@@ -33,18 +33,18 @@ setWeeklyActice();
 
 async function toggleInnerText(timeValue, previousValue){
     localData = await getData();
-    workCurrent.innerText = `${localData[0].timeframes[timeValue].current} hrs`;
-    workPrevious.innerText = `${previousValue} - ${localData[0].timeframes[timeValue].previous} hrs`;
-    playCurrent.innerText = `${localData[1].timeframes[timeValue].current} hrs`;
-    playPrevious.innerText = `${previousValue} - ${localData[1].timeframes[timeValue].previous} hrs`;
-    studyCurrent.innerText = `${localData[2].timeframes[timeValue].current} hrs`;
-    studyPrevious.innerText = `${previousValue} - ${localData[2].timeframes[timeValue].previous} hrs`;
-    exerciseCurrent.innerText = `${localData[3].timeframes[timeValue].current} hrs`;
-    exercisePrevious.innerText = `${previousValue} - ${localData[3].timeframes[timeValue].previous} hrs`;
-    socialCurrent.innerText = `${localData[4].timeframes[timeValue].current} hrs`;
-    socialPrevious.innerText = `${previousValue} - ${localData[4].timeframes[timeValue].previous} hrs`;
-    selfCareCurrent.innerText = `${localData[5].timeframes[timeValue].current} hrs`;
-    selfCarePrevious.innerText = `${previousValue} - ${localData[5].timeframes[timeValue].previous} hrs`;
+    workCurrent.innerText = `${localData[0].timeframes[timeValue].current}hrs`;
+    workPrevious.innerText = `${previousValue} - ${localData[0].timeframes[timeValue].previous}hrs`;
+    playCurrent.innerText = `${localData[1].timeframes[timeValue].current}hrs`;
+    playPrevious.innerText = `${previousValue} - ${localData[1].timeframes[timeValue].previous}hrs`;
+    studyCurrent.innerText = `${localData[2].timeframes[timeValue].current}hrs`;
+    studyPrevious.innerText = `${previousValue} - ${localData[2].timeframes[timeValue].previous}hrs`;
+    exerciseCurrent.innerText = `${localData[3].timeframes[timeValue].current}hrs`;
+    exercisePrevious.innerText = `${previousValue} - ${localData[3].timeframes[timeValue].previous}hrs`;
+    socialCurrent.innerText = `${localData[4].timeframes[timeValue].current}hrs`;
+    socialPrevious.innerText = `${previousValue} - ${localData[4].timeframes[timeValue].previous}hrs`;
+    selfCareCurrent.innerText = `${localData[5].timeframes[timeValue].current}hrs`;
+    selfCarePrevious.innerText = `${previousValue} - ${localData[5].timeframes[timeValue].previous}hrs`;
 }
 
 dailyToggle.addEventListener('click', function(){
