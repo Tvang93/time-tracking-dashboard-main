@@ -40,13 +40,7 @@
     color:white;
 }
 
-@media (max-width: 1200px){
-    /* .profile-card{
-        grid-row: span 3;
-    } */
-}
-
-@media (max-width: 900px){
+@media (max-width: 767px){
     .profile-card {
         grid-row: span 1;
         height: 203px;

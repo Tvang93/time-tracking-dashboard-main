@@ -99,7 +99,7 @@
     }
 }
 
-@media (max-width: 900px){
+@media (max-width: 767px){
     .content-box {
         grid-template-columns: auto;
         grid-template-rows: unset;

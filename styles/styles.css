@@ -109,7 +109,7 @@ p:hover {
 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   body {
     display: grid;
     grid-template-columns: 24px auto 24px;
